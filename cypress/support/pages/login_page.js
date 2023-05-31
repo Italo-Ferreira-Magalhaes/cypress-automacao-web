@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import user_dados from "c:/Users/user/Documents/cypress_automacao_web/cypress/fixtures/user_dados"
+
 
 // Elementos
 const elements = {
