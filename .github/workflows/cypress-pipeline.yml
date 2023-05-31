@@ -20,10 +20,14 @@ jobs:
             -   name: Checkout/Clone do projeto
                 uses: actions/checkout@v3
 
+            # execução do 
+            -   name: Instalar dependencias do projeto
+                run: npm install
+
             # execução e config do projeto
             -   name: Cypress run
                 uses: cypress-io/github-action@v5
                 with:
                     record: true
                 env: 
-                    CYPRESS_RECORD_KEY: ${{ secrets.GITHUB_TOKEN }}
+                    CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
