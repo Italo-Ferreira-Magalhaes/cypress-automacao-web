@@ -8,6 +8,7 @@ module.exports = defineConfig({
       charts: true,
       reportTitle: 'Projeto do Curso de Cypress',
       reportPageTitle: 'Projeto do Curso de Cypress',
+      embeddedScreenshots: true,
     },
     baseUrl: "http://automationpratice.com.br/",
     defaultCommandTimeout: 5000,
